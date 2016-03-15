@@ -22,7 +22,6 @@ limitations under the License.
 using namespace std;
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     int T=0,a[1000]={0};
     cin>>T;
     for(int n=0;n<T;n++){
