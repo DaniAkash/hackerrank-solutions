@@ -1,5 +1,5 @@
 '''
-Copyright 2016 Dani Akash
+Copyright 2016-Present Dani Akash
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
