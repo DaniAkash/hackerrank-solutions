@@ -23,21 +23,22 @@ using namespace std;
 
 
 int main() {
-    int testCases,cash,cost,wrapper;
-    cin>>testCases;
+    unsigned int length=0,testCases=0,vehicle=0;
+    cin>>length>>testCases;
+    unsigned long int lane[length]={0};
+    for(int i=0;i<length;i++){
+        cin>>lane[i];
+    }
     while(testCases--){
-        cin>>cash>>cost>>wrapper;
-        int chocolates=0,temp=0;
-        chocolates=cash/cost;
-        if(chocolates>=wrapper){
-            temp=chocolates;
-            do{
-                temp-=wrapper;
-                chocolates++;
-                temp++;
-            }while(temp>=wrapper);
+        int start=0,end=0;
+        cin>>start>>end;
+        vehicle=lane[start];
+        for(int i=start;i<=end;i++){
+            if(lane[i]<vehicle){
+                vehicle=lane[i];
+            }
         }
-        cout<<chocolates<<endl;
+        cout<<vehicle<<endl;
     }
     return 0;
 }
